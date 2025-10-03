@@ -8,14 +8,11 @@ To extract metadata, perform timeline analysis, and search for hidden data using
      -  plaso/log2timeline – For timeline analysis
 - **Steganography tools:** steghide, zsteg, binwalk
 - **Test Data:** Image, video, and document files (some with embedded hidden data)
-## ARCHITECTURE DIAGRAM
-```mermaid
-flowchart TD
-    A[Sample Files - Images, Videos, Documents] --> B[Metadata Extraction with ExifTool]
-    B --> C[Event Timeline Creation with log2timeline]
-    C --> D[Hidden Data Search with Steganography Tools]
-    D --> E[Evidence Analysis and Documentation]
-```
+
+## ARCHITECTURE DIAGRAM:
+
+<img width="636" height="811" alt="image" src="https://github.com/user-attachments/assets/a774627a-0331-4ab3-864d-49ed62ec209b" />
+
 ## DESIGN STEPS:
 ### Step 1:
 Use exiftool to extract metadata from files such as images, documents, and videos.
